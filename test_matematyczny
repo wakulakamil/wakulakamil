@@ -1,0 +1,61 @@
+print('''To jest sprawdzian z matematyki w temacie mnożenia.
+
+Oblicz poniższe zadania:''')
+
+zad_1 = input("1. 4 * 9 = ")
+zad_2 = input("2. 8 * 9 = ")
+zad_3 = input("3. 6 * 9 = ")
+zad_4 = input("4. 3 * 9 = ")
+zad_5 = input("5. 7 * 9 = ")
+
+wynik_1 = 4 * 9
+wynik_2 = 8 * 9
+wynik_3 = 6 * 9
+wynik_4 = 3 * 9
+wynik_5 = 7 * 9
+print()
+
+if int(zad_1) == wynik_1:
+    print("1. Dobrze")
+else:
+    print("1. Zle")
+
+if int(zad_2) == wynik_2:
+    print("1. Dobrze")
+else:
+    print("1. Zle")
+
+if int(zad_3) == wynik_3:
+    print("1. Dobrze")
+else:
+    print("1. Zle")
+
+if int(zad_4) == wynik_4:
+    print("1. Dobrze")
+else:
+    print("1. Zle")
+
+if int(zad_5) == wynik_5:
+    print("1. Dobrze")
+else:
+    print("1. Zle")
+
+
+T = "tak"
+N = "nie"
+
+def dobre_wyniki():
+    print()
+    print("Poprawne wyniki to:")
+    print("4 * 9 = " + str(wynik_1))
+    print("8 * 9 = " + str(wynik_2))
+    print("6 * 9 = " + str(wynik_3))
+    print("3 * 9 = " + str(wynik_4))
+    print("7 * 9 = " + str(wynik_5))
+
+print()
+odpowiedz = input("Czy chcesz zobaczyć poprawne wyniki? (tak / nie) :")
+if odpowiedz == T:
+    print(dobre_wyniki())
+else:
+    print("No trudno :)")
