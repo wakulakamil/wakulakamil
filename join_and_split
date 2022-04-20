@@ -1,0 +1,9 @@
+#Zadanie polegające na wylistowaniu imion z danego stringa csv.
+
+csv = 'Eric,John,Michael,Terry,Graham:TerryG;Brian'
+print(csv.split(";"))
+
+csv1 = csv.replace(";",",")
+csv2 = csv1.replace(":",",")
+print(csv2)
+print(csv2.split(","))
