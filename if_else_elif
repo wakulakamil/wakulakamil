@@ -1,0 +1,64 @@
+# # ćwiczenie 1
+
+is_raining = False
+is_cold = False
+print("Good morning")
+if is_raining and is_cold:
+    print("Bring umbrella and jacket")  
+elif is_raining and not(is_cold):
+    print("Bring umbrellat")  
+elif not(is_raining) and is_cold:
+    print("Bring jacket")  
+else:
+    print("Shirt is fine")
+
+
+
+# # ćwiczenie 2
+
+amount = 50
+if amount <= 50:
+    print("Purchase approved")
+else:
+    print("Please enter you pin!")
+
+# # ćwiczenie 3
+# # Kalkulator
+
+mode = input("Wpisz co chcesz zrobić z liczbami:? (+,-,*,/)")
+num1 = float(input("Wpisz pierwszą liczbę: "))
+num2 = float(input("Wpisz drugą liczbę: "))
+
+if mode == "+":
+    print(f"Odpowiedź: {num1 + num2}")
+elif mode == "-":
+    print(f"Odpowiedź: {num1 - num2}")
+elif mode == "*":
+    print(f"Odpowiedź: {num1 * num2}")
+elif mode == "/":
+    print(f"Odpowiedź: {num1 / num2}")
+
+else:
+    print("Nieprawidłowe dane")
+
+
+
+
+# Ćwiczenie 4 - Optymalizacja
+
+from calendar import month
+
+
+month = input("Wisz nazwę miesiąca, a ja Ci podam ile ma dni (jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec): ")
+
+
+def num_days(month, day):
+
+    if month == 'jan' or month == 'mar' or month =='may' or month =='jul' or month =='aug' or month =='oct' or month =='dec':
+        print('number of days in',month,'is',day)
+    elif month == 'feb':
+        print('number of days in',month,'is',int(day-3))
+    else:
+        print('number od days in',month, 'is',int(day-1))
+
+num_days(month, 31)
